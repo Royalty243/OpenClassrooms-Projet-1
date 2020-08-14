@@ -1,0 +1,12 @@
+- removed "div_noire" class and left h3 only
+- added a margin to the div_jaune
+- added display flex to div blanche
+- added div icones and set direction to row
+- removed li to the elements in the experience section 
+	to let them in the paragraph to align them properly
+- set the last elements to a paragraph instead of div
+- changed padding right of bullet points to px
+- removed padding and margin bottom to section css
+- added a corps class to separate the title from the body of the resume
+- the line appears because the word "recommandations" is too long to fit on one line
+	added overflow: scroll or word-wrap: break-word
