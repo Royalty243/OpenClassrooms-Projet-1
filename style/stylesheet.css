@@ -110,31 +110,31 @@ h2 {
     flex: 0 48%;
 }
 
-#recent::before {
+li.recent::before {
     /* L'unicode la double puce */
     content: "\29BF";
 }
 
-.styled-list li:nth-child(even)::before {
+.tyled-list li:nth-child(even)::before {
     /* Pour ne pas afficher les puces devant les elements sur la droite */
     content: none;
 }
 
-.section>p {
+.ection>p {
     /* Separer les deux paragraphes a la fin de la page */
     flex: 0 50%;
 }
 
-.titre {
+.itre {
     font-weight: bold;
     font-size: 20px;
 }
 
-#div_blanche i {
+#iv_blanche i {
     color: rgb(255, 187, 0);
 }
 
-@media only screen and (min-width: 601px) {
+@edia only screen and (min-width: 601px) {
     img.responsive {
         width: 105px;
     }
@@ -154,10 +154,12 @@ h2 {
     h2 {
         font-size: 26px;
     }
+
     .titre {
-      
+
         font-size: 20px;
     }
+
     .section {
         font-size: 16px;
     }
@@ -168,6 +170,7 @@ h2 {
     img.responsive {
         width: 60px;
     }
+
     h1 {
         font-size: 14px;
     }
@@ -183,10 +186,12 @@ h2 {
     .section {
         font-size: 8px;
     }
+
     .titre {
 
         font-size: 10px;
     }
+
     #div_jaune {
         font-size: 7px;
     }
