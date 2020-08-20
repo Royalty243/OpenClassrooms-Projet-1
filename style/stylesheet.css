@@ -115,26 +115,26 @@ li.recent::before {
     content: "\29BF";
 }
 
-.tyled-list li:nth-child(even)::before {
+.styled-list li:nth-child(even)::before {
     /* Pour ne pas afficher les puces devant les elements sur la droite */
     content: none;
 }
 
-.ection>p {
+.section>p {
     /* Separer les deux paragraphes a la fin de la page */
     flex: 0 50%;
 }
 
-.itre {
+.titre {
     font-weight: bold;
     font-size: 20px;
 }
 
-#iv_blanche i {
+#div_blanche i {
     color: rgb(255, 187, 0);
 }
 
-@edia only screen and (min-width: 601px) {
+@media only screen and (min-width: 601px) {
     img.responsive {
         width: 105px;
     }
