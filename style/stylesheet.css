@@ -3,6 +3,7 @@
 }
 
 body {
+    /*Afficher les elements de la page sur une ligne*/
     display: flex;
     flex-direction: row;
 }
@@ -81,22 +82,52 @@ h2 {
 
 .section {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     text-align: justify;
 }
 
+.styled-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    /* Retirer les puces par defaut */
+}
+
+.styled-list li::before {
+    content: "\2022";
+    /* Le contenu: \2022 est le CSS Code/unicode pour une puce */
+    color: rgb(255, 187, 0);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -5%;
+}
+
+.styled-list li {
+    /* Pour afficher deux elements sur une ligne */
+    margin: 1%;
+    flex: 0 48%;
+}
+
+#recent::before {
+    /* L'unicode la double puce */
+    content: "\29BF";
+}
+
+.styled-list li:nth-child(even)::before {
+    /* Pour ne pas afficher les puces devant les elements sur la droite */
+    content: none;
+}
+
 .section>p {
+    /* Separer les deux paragraphes a la fin de la page */
     flex: 0 50%;
 }
 
 .titre {
     font-weight: bold;
     font-size: 20px;
-}
-
-.bullet {
-    padding-right: 5px;
-    color: rgb(255, 187, 0);
 }
 
 #div_blanche i {
