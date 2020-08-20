@@ -136,7 +136,7 @@ li.recent::before {
 
 @media only screen and (min-width: 601px) {
     img.responsive {
-        width: 105px;
+        width: 90px;
     }
 
     #div_jaune {
