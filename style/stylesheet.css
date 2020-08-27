@@ -187,17 +187,21 @@ li.recent::before {
 
     #div_jaune {
         flex: 100%;
-        order: 1;
+        
         font-size: 7px;
     }
 
     #div_blanche {
         flex: 100%;
-        order: 2;
+     
     }
 
     .styled-list {
         flex-flow: column;
+    }
+
+    .contact_content{
+        padding: 2%;
     }
 /*
     img.responsive {
