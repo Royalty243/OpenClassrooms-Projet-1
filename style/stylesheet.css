@@ -1,19 +1,25 @@
-* {
+body,
+html {
     font-family: "Times New Roman", Times, serif;
-}
-
-body {
-    /*Afficher les elements de la page sur une ligne*/
     display: flex;
     flex-direction: row;
 }
 
+article {
+    font-size: medium;
+}
+
+
+/***********************************************/
+
 #div_jaune {
     display: flex;
-    width: 30%;
+    flex: 30%;
     background-color: rgb(255, 187, 0);
     flex-direction: column;
-    border: 1px black solid;
+    border: 1px rgb(124, 108, 108) solid;
+    margin: 0;
+    padding: 0;
 }
 
 #div_jaune .profile {
@@ -25,8 +31,8 @@ body {
 }
 
 #div_jaune .profile img {
-    /*width: auto;*/
-    height: auto;
+    width: auto;
+    height: 90%;
     border-radius: 50%;
 }
 
@@ -34,15 +40,19 @@ body {
     color: rgb(255, 187, 0);
     text-align: center;
     background-color: rgb(24, 21, 21);
+    margin: 0;
+    padding: 0;
 }
 
 #div_jaune .contact_content {
     display: flex;
     flex-flow: column wrap;
-    margin: 7.5%;
+    margin: 0;
+    padding: 7.5%;
     text-align: justify;
     justify-content: space-around;
     color: saddlebrown;
+
 }
 
 #div_jaune .icones {
@@ -53,13 +63,16 @@ body {
     border-radius: 50%;
 }
 
+
+/*********************************************/
+
 #div_blanche {
     display: flex;
     flex-direction: column;
     padding-left: 7.5%;
     padding-right: 5%;
     padding-top: 5%;
-    width: 70%;
+    flex: 70%;
     border: 1px black solid;
     word-wrap: break-word
 }
@@ -88,8 +101,7 @@ h2 {
 
 .styled-list {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     list-style: none;
     /* Retirer les puces par defaut */
 }
@@ -134,7 +146,9 @@ li.recent::before {
     color: rgb(255, 187, 0);
 }
 
-@media only screen and (min-width: 601px) {
+
+/********************************************/
+/*@media only screen and (min-width: 601px) {
     img.responsive {
         width: 90px;
     }
@@ -163,10 +177,29 @@ li.recent::before {
     .section {
         font-size: 16px;
     }
-}
+}*/
 
 /* If the screen size is 600px or less, set the font-size of <div> to 30px */
 @media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    #div_jaune {
+        flex: 100%;
+        order: 1;
+        font-size: 7px;
+    }
+
+    #div_blanche {
+        flex: 100%;
+        order: 2;
+    }
+
+    .styled-list {
+        flex-flow: column;
+    }
+
     img.responsive {
         width: 60px;
     }
@@ -175,12 +208,12 @@ li.recent::before {
         font-size: 14px;
     }
 
-    h4 {
-        font-size: 10px;
-    }
-
     h2 {
         font-size: 13px;
+    }
+
+    h4 {
+        font-size: 10px;
     }
 
     .section {
@@ -188,11 +221,7 @@ li.recent::before {
     }
 
     .titre {
-
         font-size: 10px;
     }
 
-    #div_jaune {
-        font-size: 7px;
-    }
 }
