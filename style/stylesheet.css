@@ -199,7 +199,7 @@ li.recent::before {
     .styled-list {
         flex-flow: column;
     }
-
+/*
     img.responsive {
         width: 60px;
     }
@@ -222,6 +222,6 @@ li.recent::before {
 
     .titre {
         font-size: 10px;
-    }
+    }*/
 
 }
