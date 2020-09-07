@@ -3,6 +3,8 @@ html {
     font-family: "Times New Roman", Times, serif;
     display: flex;
     flex-direction: row;
+    padding: 0;
+    margin: 0;
 }
 
 article {
@@ -12,7 +14,7 @@ article {
 
 /***********************************************/
 
-#div_jaune {
+#premiere_division {
     display: flex;
     flex: 30%;
     background-color: rgb(255, 187, 0);
@@ -22,51 +24,53 @@ article {
     padding: 0;
 }
 
-#div_jaune .profile {
+#premiere_division .profile {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 10%;
+    height: 20%;
 }
 
-#div_jaune .profile img {
+#premiere_division .profile img {
     width: auto;
-    height: 90%;
+    height: auto;
     border-radius: 50%;
+    padding: 2%;
 }
 
-#div_jaune h3 {
+#premiere_division h3 {
     color: rgb(255, 187, 0);
     text-align: center;
     background-color: rgb(24, 21, 21);
     margin: 0;
-    padding: 0;
+    padding: 2%;
 }
 
-#div_jaune .contact_content {
+#premiere_division .contact_content {
     display: flex;
     flex-flow: column wrap;
     margin: 0;
     padding: 7.5%;
     text-align: justify;
     justify-content: space-around;
-    color: saddlebrown;
+    color: darkslategrey;
 
 }
 
-#div_jaune .icones {
+#premiere_division .icones {
     flex-direction: row;
 }
 
-#div_jaune .contact_content i {
+#premiere_division .contact_content i {
     border-radius: 50%;
+    color: black;
 }
 
 
 /*********************************************/
 
-#div_blanche {
+#deuxieme_division {
     display: flex;
     flex-direction: column;
     padding-left: 7.5%;
@@ -142,7 +146,7 @@ li.recent::before {
     font-size: 20px;
 }
 
-#div_blanche i {
+#deuxieme_division i {
     color: rgb(255, 187, 0);
 }
 
@@ -153,7 +157,7 @@ li.recent::before {
         width: 90px;
     }
 
-    #div_jaune {
+    #premiere_division {
         font-size: 80px;
     }
 
@@ -185,25 +189,26 @@ li.recent::before {
         flex-direction: column;
     }
 
-    #div_jaune {
+    #premiere_division {
         flex: 100%;
-        
-        font-size: 7px;
+
+
     }
 
-    #div_blanche {
+    #deuxieme_division {
         flex: 100%;
-     
+
     }
 
     .styled-list {
         flex-flow: column;
     }
 
-    .contact_content{
+    .contact_content {
         padding: 2%;
     }
-/*
+
+    /*
     img.responsive {
         width: 60px;
     }
