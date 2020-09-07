@@ -42,7 +42,7 @@ article {
 #premiere_division h3 {
     color: rgb(255, 187, 0);
     text-align: center;
-    background-color: rgb(24, 21, 21);
+    background-color: rgb(73, 70, 70);
     margin: 0;
     padding: 2%;
 }
@@ -54,7 +54,7 @@ article {
     padding: 7.5%;
     text-align: justify;
     justify-content: space-around;
-    color: darkslategrey;
+    color: rgb(73, 70, 70);
 
 }
 
@@ -64,7 +64,7 @@ article {
 
 #premiere_division .contact_content i {
     border-radius: 50%;
-    color: black;
+    color: rgb(73, 70, 70);
 }
 
 
