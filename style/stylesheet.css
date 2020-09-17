@@ -11,7 +11,7 @@ article {
     font-size: medium;
 }
 
-p{
+p {
     font-size: 20px;
 }
 
@@ -51,7 +51,7 @@ p{
     padding: 2%;
 }
 
-#premiere_division p{
+#premiere_division p {
     margin: 5px;
 }
 
@@ -69,17 +69,14 @@ p{
 
 #premiere_division .footer {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    }
-    
-    /*width:30%;*/
-    /*height:60pright: 0;x;   Height of the footer */
-    /*background:#6cf;
- }*/
+}
 
- 
+
+
+
 #premiere_division .icones {
     flex-direction: row;
 }
@@ -106,7 +103,7 @@ p{
     padding-top: 5%;
 }
 
-.nom{
+.nom {
     font-size: 75px;
 }
 
@@ -171,13 +168,13 @@ li.recent::before {
     flex: 0 50%;
 }
 
-.place{
+.place {
     font-weight: bolder;
     font-size: 25px;
 }
 
 .titre {
-   line-height: 50px;
+    line-height: 50px;
     font-size: 22px;
 }
 
@@ -198,18 +195,15 @@ li.recent::before {
     #premiere_division {
         flex: 100%;
     }
-    
+
     #premiere_division .profile img {
-        width: auto;
+        width: 70%;
         height: auto;
     }
 
     #premiere_division .footer {
         position: relative;
-        bottom:0;
-        left: 0;
-        width: 100%;
-        }
+    }
 
     #deuxieme_division {
         flex: 100%;
